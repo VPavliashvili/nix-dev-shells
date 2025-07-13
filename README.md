@@ -20,3 +20,7 @@ and you are good to go
 
 debugger and lsp functionality tested on neovim and works well</br>
 you can see related neovim config in my [dotfiles](https://github.com/VPavliashvili/.dotfiles) [here](https://github.com/VPavliashvili/.dotfiles/blob/master/nvim/.config/nvim/lua/plugins/coding/languages/csharp/init.lua)
+
+##### Small tip
+use `echo $IN_NIX_SHELL` to check if you are currently inside developer shell(if true will return `impure` by default)
+

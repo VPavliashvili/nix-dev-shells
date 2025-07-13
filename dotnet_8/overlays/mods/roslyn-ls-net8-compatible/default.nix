@@ -1,13 +1,6 @@
-# creating this overlay because even unstable does not
-# offer latest version of roslyn-ls as of 02/09/2025
-# https://github.com/NixOS/nixpkgs/blob/nixos-unstable/pkgs/by-name/ro/roslyn-ls/package.nix
-# uses vsVersion = "2.62.18" which on its part means VSCode-CSharp-2.62.18
-# but due to latest changes in roslyn.nvim plugin
-# commit: https://github.com/seblyng/roslyn.nvim/commit/ffd26b6e993b86c0f653cdf356eed14647bd2f14
-# because of this at least revision is needed VSCode-CSharp-2.63.31
-# here is the actual change on roslyn-ls side
-# commit: https://github.com/dotnet/roslyn/pull/76437/commits/b7bce03f91fee99cb631cd0947339599feb02be5
-# i am pulling roslyn tag VSCode-CSharp-2.64.7 which is latest at this moment
+# creating this overlay because current roslyn-ls package does not(as of version 25.05)
+# properly support roslyn.nvim lsp integration for neovim
+# (I suspect its generally broken for .net8, For .net9 works fine without this overlay tho)
 {prev}:
 let
   pinnedPkgs = import (fetchTarball {
