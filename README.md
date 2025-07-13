@@ -1,4 +1,4 @@
-##### NOTE: This reop is WIP
+##### NOTE: This repo is WIP
 
 #### Instructions
 Clone the repo and cd into directory named after your preffered .net version</br>
